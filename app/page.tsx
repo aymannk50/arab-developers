@@ -1,33 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import developers from "../data/developers.json";
 
-const developers = [
-  {
-    name: "Ayman Naeem",
-    title: "Web Developer & Designer",
-    country: "Egypt",
-    skills: ["WordPress", "Frontend", "SEO"],
-    portfolio: "https://ayman.de5.net/index-en.html",
-    initials: "AN",
-  },
-  {
-    name: "Sara Ahmed",
-    title: "UI/UX Designer",
-    country: "Egypt",
-    skills: ["Figma", "UI Design", "Prototyping"],
-    portfolio: "#",
-    initials: "SA",
-  },
-  {
-    name: "Omar Khaled",
-    title: "Frontend Developer",
-    country: "UAE",
-    skills: ["React", "Next.js", "TypeScript"],
-    portfolio: "#",
-    initials: "OK",
-  },
-];
 
 const countries = ["All Countries", "Egypt", "UAE", "Saudi Arabia"];
 const specialties = [
@@ -78,7 +53,9 @@ export default function Home() {
               About
             </a>
             <a
-              href="#join"
+              href="https://github.com/aymannk50/arab-developers/blob/main/CONTRIBUTING.md"
+target="_blank"
+rel="noreferrer"
               className="rounded-full bg-cyan-400 px-5 py-2.5 font-semibold text-slate-950 hover:bg-cyan-300"
             >
               Join Directory
@@ -210,9 +187,14 @@ export default function Home() {
           Join the directory and make it easier for companies and collaborators
           to discover your work.
         </p>
-        <button className="mt-7 rounded-full bg-slate-950 px-7 py-3 font-semibold text-white hover:bg-slate-800">
-          Add Your Profile
-        </button>
+     <a
+  href="https://github.com/aymannk50/arab-developers/blob/main/CONTRIBUTING.md"
+  target="_blank"
+  rel="noreferrer"
+  className="mt-7 inline-block rounded-full bg-slate-950 px-7 py-3 font-semibold text-white hover:bg-slate-800"
+>
+  Add Your Profile
+</a>
       </section>
 
       <footer id="about" className="px-6 py-8 text-center text-sm text-slate-500">
